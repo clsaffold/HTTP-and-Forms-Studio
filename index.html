@@ -4,8 +4,22 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
+		function searchEngine() {
+			radio.getElementById(label)
+			console.log(label)
+			
+		}
+    window.addEventListener("load", sendSearch(url){
+		if label === Google
+				url = https://www.google.com/search
+				else if label === DuckDuckGo
+				url = https://duckduckgo.com/
+				else if	label === bing
+				url = https://www.bing.com/search
+				else 
+				url = https://www.ask.com/web
+			
+			return url
     });
 	</script>
 </head>
@@ -18,8 +32,7 @@
 		<label>DuckDuckGo</label><input type="radio" name="engine"/>
 		<label>bing</label><input type="radio" name="engine"/>
 		<label>Ask</label><input type="radio" name="engine"/>
-		<input type="submit"/>
-		<button>Go! faster</button>
+		<button>Go!</button>
 	</form>
 
 </body>
