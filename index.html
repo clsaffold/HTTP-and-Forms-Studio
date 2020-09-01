@@ -8,31 +8,21 @@
 			let form = document.querySelector("searchform");
 			form.addEventListener("submit", function(event) {
 				let nameInput = document.querySelector("input[name=engine]");
-					if label === Google
-						url = https://www.google.com/search
-						else if label === DuckDuckGo
-						url = https://duckduckgo.com/
-						else if	label === bing
-						url = https://www.bing.com/search
-						else if label == Ask
-						url = https://www.ask.com/web
-				
-				return url
 		});
 		
 		</script>
-
 	</head>
 
 	<body>
 
 		<form id="searchForm" action="function(event)" method="GET">
 			<label>Search</label><input type="text" name="q">        
-			<label>Google</label><input type="radio" name="engine"/>
-			<label>DuckDuckGo</label><input type="radio" name="engine"/>
-			<label>bing</label><input type="radio" name="engine"/>
-			<label>Ask</label><input type="radio" name="engine"/>
+			<label>Google</label><input type="radio" name="engine" value="https://www.google.com/search"/>
+			<label>DuckDuckGo</label><input type="radio" name="engine" value="https://duckduckgo.com/"/>
+			<label>bing</label><input type="radio" name="engine" value="https://www.bing.com/search"/>
+			<label>Ask</label><input type="radio" name="engine" value="https://www.ask.com/web"/>
 			<button>Submit</button>
 		</form>
 	</body>
+
 </html>
