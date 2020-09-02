@@ -4,20 +4,27 @@
 		<meta charset="utf-8">
 		<script>
 
-		window.addEventListener("load", function() {
+		window.addEventListener("load", () => {
 			let form = document.querySelector("searchform");
 			form.addEventListener("submit", function(event) {
-				let nameInput = document.querySelector("input[name=engine]");
-					if label === Google
-						url = https://www.google.com/search
-						else if label === DuckDuckGo
-						url = https://duckduckgo.com/
-						else if	label === bing
-						url = https://www.bing.com/search
-						else if label == Ask
-						url = https://www.ask.com/web
+				let radioInput = document.querySelector("input[name=engine]");
+					if engine === "a"
+						rdr = https://www.google.com/search;
+						
+						else if engine === "b"
+							rdr = https://duckduckgo.com/;
+						
+						else if	engine === "c"
+							rdr = https://www.bing.com/search;
+						
+						else if engine === "d"
+							rdr = https://www.ask.com/web;
+
+						else
+							console.log("Must select radio option to search");
 				
-				return url
+				return rdr
+				console.log(rdr)
 			});
 		};
 		
@@ -26,12 +33,12 @@
 
 	<body>
 
-		<form id="searchForm" action="function(event)" method="GET">
+		<form id="searchForm" action="function()" method="GET">
 			<label>Search</label><input type="text" name="q">        
-			<label>Google</label><input type="radio" name="engine" value="https://www.google.com/search"/>
-			<label>DuckDuckGo</label><input type="radio" name="engine" value="https://duckduckgo.com/"/>
-			<label>bing</label><input type="radio" name="engine" value="https://www.bing.com/search"/>
-			<label>Ask</label><input type="radio" name="engine" value="https://www.ask.com/web"/>
+			<label>Google</label><input type="radio" name="engine" value="a"/>
+			<label>DuckDuckGo</label><input type="radio" name="engine" value="b"/>
+			<label>bing</label><input type="radio" name="engine" value="c"/>
+			<label>Ask</label><input type="radio" name="engine" value="d"/>
 			<button>Submit</button>
 		</form>
 	</body>
