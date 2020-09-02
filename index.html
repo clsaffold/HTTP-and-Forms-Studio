@@ -5,9 +5,11 @@
 		<script>
 
 		window.addEventListener("load", function() {
-			let form = document.querySelector("searchform");
+			let form = document.querySelector("searchForm");
 			form.addEventListener("submit", function(event) {
 				let nameInput = document.querySelector("input[name=engine]");
+
+				return value
 		});
 		
 		</script>
@@ -15,7 +17,7 @@
 
 	<body>
 
-		<form id="searchForm" action="function(event)" method="GET">
+		<form id="searchForm" action="engine.value" method="GET" target=" ">
 			<label>Search</label><input type="text" name="q">        
 			<label>Google</label><input type="radio" name="engine" value="https://www.google.com/search"/>
 			<label>DuckDuckGo</label><input type="radio" name="engine" value="https://duckduckgo.com/"/>
@@ -26,3 +28,5 @@
 	</body>
 
 </html>
+//function(event)?q=cecilia&engine=https%3A%2F%2Fwww.google.com%2Fsearch
+//file:///Users/ceciliasmiller/lc101/HTTP-and-Forms/value?q=cecilia&engine=https%3A%2F%2Fwww.google.com%2Fsearch
