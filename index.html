@@ -6,23 +6,9 @@
 
 		window.addEventListener("load", () => {
 			let form = document.querySelector("searchform");
-			form.addEventListener("submit", function(event) {
-				let radioInput = document.querySelector("input[name=engine]");
-					if engine === "a"
-						rdr = https://www.google.com/search;
-						
-						else if engine === "b"
-							rdr = https://duckduckgo.com/;
-						
-						else if	engine === "c"
-							rdr = https://www.bing.com/search;
-						
-						else if engine === "d"
-							rdr = https://www.ask.com/web;
-
-						else
-							console.log("Must select radio option to search");
-				
+			let radios = document.querySelectorAll('input[type=radio]pname="engine"]');
+			radios.forEach(radio => radio.addEventListener('change,'() => alert(radio.value)))
+			
 				return rdr
 				console.log(rdr)
 			});
@@ -33,12 +19,12 @@
 
 	<body>
 
-		<form id="searchForm" action="function()" method="GET">
+		<form id="searchForm" action="submitscript.php" method="GET">
 			<label>Search</label><input type="text" name="q">        
-			<label>Google</label><input type="radio" name="engine" value="a"/>
-			<label>DuckDuckGo</label><input type="radio" name="engine" value="b"/>
-			<label>bing</label><input type="radio" name="engine" value="c"/>
-			<label>Ask</label><input type="radio" name="engine" value="d"/>
+			<label>Google</label><input type="radio" name="engine" value="https://www.google.com/search"/>
+			<label>DuckDuckGo</label><input type="radio" name="engine" value="https://duckduckgo.com/"/>
+			<label>bing</label><input type="radio" name="engine" value="https://www.bing.com/search"/>
+			<label>Ask</label><input type="radio" name="engine" value="https://www.ask.com/web"/>
 			<button>Submit</button>
 		</form>
 	</body>
