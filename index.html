@@ -4,15 +4,28 @@
 		<meta charset="utf-8">
 		<script>
 
-		window.addEventListener("load", () => {
+		function setSearchEngine(){
 			let form = document.querySelector("searchform");
-			let radios = document.querySelectorAll('input[type=radio]pname="engine"]');
-			radios.forEach(radio => radio.addEventListener('change,'() => alert(radio.value)))
+			console.log("setSearchEngine ran");
+			// let radios = document.querySelectorAll('input[type=radio]pname="engine"]');
+			// radios.forEach(radio => radio.addEventListener('change,'() => alert(radio.value)))
 			
-				return rdr
-				console.log(rdr)
-			});
-		};
+			// 	return rdr
+			// 	console.log(rdr)
+			// });
+			// const valToUrl = {
+			// 	g: "",
+			// 	d: "",
+			// 	b: "",
+			// 	a: ""
+			// }
+		}
+		window.addEventListener("load", () => {
+			let form = document.querySelector("searchForm");
+			form.addEventListener("submit", () => {
+				setSearchEngine();
+			})	
+		});
 		
 		</script>
 	</head>
@@ -23,12 +36,10 @@
 			<label>Search</label><input type="text" name="q">        
 			<label>Google</label><input type="radio" name="engine" value="https://www.google.com/search"/>
 			<label>DuckDuckGo</label><input type="radio" name="engine" value="https://duckduckgo.com/"/>
-			<label>bing</label><input type="radio" name="engine" value="https://www.bing.com/search"/>
+			<label>bing</label><inpucdtype="radio" name="engine" value="https://www.bing.com/search"/>
 			<label>Ask</label><input type="radio" name="engine" value="https://www.ask.com/web"/>
 			<button>Submit</button>
 		</form>
 	</body>
 
 </html>
-//function(event)?q=cecilia&engine=https%3A%2F%2Fwww.google.com%2Fsearch
-//file:///Users/ceciliasmiller/lc101/HTTP-and-Forms/value?q=cecilia&engine=https%3A%2F%2Fwww.google.com%2Fsearch
